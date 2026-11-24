@@ -1,4 +1,4 @@
-# Digit-la-risin-juma-interakt-vai-SQL-apguvei-izstrde Mājaslapas kods
+<!DOCTYPE html>
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
@@ -9,52 +9,65 @@
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
             margin: 0;
-            padding: 0;
-            color: black; /* Teksta krāsa uz melnu */
+            color: black;
+            line-height: 1.6;
         }
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 20px;
+            padding: 24px 20px;
             text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.6em;
+            font-weight: normal;
         }
         main {
-            max-width: 800px;
-            margin: 20px auto;
+            max-width: 720px;
+            margin: 32px auto;
             background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 32px;
         }
-        h1, h2 {
+        section + section {
+            margin-top: 36px;
+        }
+        h2 {
             text-align: center;
+            font-size: 1.2em;
+            font-weight: normal;
+            margin: 0 0 16px;
         }
-        .controls, .levels {
-            margin-top: 20px;
+        p {
+            margin: 8px 0;
         }
-        .controls p, .levels p {
-            margin: 10px 0;
-        }
-        .levels ul {
+        ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
-        .levels li {
+        li {
             background-color: #e7f3e7;
-            margin: 5px 0;
-            padding: 10px;
-            border-left: 5px solid #4CAF50;
-            border-radius: 4px;
+            margin: 4px 0;
+            padding: 8px 12px;
         }
-        .placeholder {
-            color: #000000
-            font-style: italic;
+        a {
+            display: inline-block;
+            margin-top: 16px;
+            color: #4CAF50;
         }
         footer {
             text-align: center;
-            margin-top: 40px;
+            margin: 32px 20px;
             color: #555;
+            font-size: 0.85em;
+        }
+        footer p {
+            margin: 4px 0;
+        }
+        .credit {
             font-size: 0.9em;
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -62,12 +75,14 @@
     <header>
         <h1>SQL Spēles apgūšanas starpnieks</h1>
     </header>
+
     <main>
-        <section class="intro">
+        <section>
             <h2>Par spēli</h2>
             <p>Šī spēle palīdz apgūt SQL, izmantojot RPG Maker MV. Kustība notiek ar <strong>bultiņām</strong> vai <strong>kreisās peles pogas nospiešanu</strong>. Saskarsme ar personāžiem notiek ar <strong>Enter</strong> vai <strong>kreisās pogas uzspiešanu</strong>.</p>
         </section>
-<section class="levels">
+
+        <section>
             <h2>9 līmeņi SQL apguvei</h2>
             <ul>
                 <li><strong>1. līmenis:</strong> CREATE TABLE</li>
@@ -83,7 +98,7 @@
             <a href="https://notepadexe.itch.io/sql-quest">SQL quest by Notepad.exe</a>
         </section>
 
-<section class="controls">
+        <section>
             <h2>Vadība</h2>
             <p><strong>Kustība:</strong> bultiņas vai kreisā peles poga uz mērķa vietu</p>
             <p><strong>Saskarsme ar personāžiem:</strong> Enter vai kreisā peles poga</p>
@@ -91,7 +106,8 @@
         </section>
     </main>
 
-<footer>
+    <footer>
+        <p class="credit">SMU ir tapis Junior Achivement Latvia programmas «Skolēnu mācību uzņēmums» ietvaros sadarbībā ar RTU Austrumlatvijas Tehnoloģiju vidusskolu.</p>
         <p>&copy; 2025 SQL Spēles Apgūšanas Starpnieks</p>
     </footer>
 </body>
